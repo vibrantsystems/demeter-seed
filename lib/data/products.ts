@@ -1,6 +1,17 @@
 import { Product } from "./types";
+import {
+  maizeAgronomy,
+  soybeanAgronomy,
+  groundnutAgronomy,
+  beanAgronomy,
+  riceAgronomy,
+  sorghumMilletAgronomy,
+  oilseedAgronomy,
+  vegetableAgronomy,
+} from "./agronomy";
 
 export const products: Product[] = [
+  // MAIZE
   {
     id: "1",
     slug: "maize-dk-8033",
@@ -14,6 +25,7 @@ export const products: Product[] = [
     description:
       "High-yield hybrid maize suitable for mid to high altitude areas.",
     image: "/maize.jpg",
+    agronomy: maizeAgronomy,
   },
   {
     id: "2",
@@ -28,6 +40,7 @@ export const products: Product[] = [
     description:
       "Early maturing maize variety ideal for areas with shorter rains.",
     image: "/maize.jpg",
+    agronomy: maizeAgronomy,
   },
   {
     id: "3",
@@ -41,8 +54,10 @@ export const products: Product[] = [
     cost: "MWK 82,000 / 10kg",
     description: "Stable performer with good drought tolerance.",
     image: "/maize.jpg",
+    agronomy: maizeAgronomy,
   },
 
+  // SOYBEAN
   {
     id: "4",
     slug: "soybean-tikolore",
@@ -55,6 +70,7 @@ export const products: Product[] = [
     cost: "MWK 65,000 / 10kg",
     description: "Early maturing soybean with good disease tolerance.",
     image: "/soy.webp",
+    agronomy: soybeanAgronomy,
   },
   {
     id: "5",
@@ -68,8 +84,10 @@ export const products: Product[] = [
     cost: "MWK 68,000 / 10kg",
     description: "High protein soybean variety suitable for processing.",
     image: "/soy.webp",
+    agronomy: soybeanAgronomy,
   },
 
+  // GROUNDNUT
   {
     id: "6",
     slug: "groundnut-chalimbana",
@@ -82,6 +100,7 @@ export const products: Product[] = [
     cost: "MWK 70,000 / 10kg",
     description: "Widely trusted variety with excellent kernel quality.",
     image: "/groundnuts.jpg",
+    agronomy: groundnutAgronomy,
   },
   {
     id: "7",
@@ -95,8 +114,10 @@ export const products: Product[] = [
     cost: "MWK 72,000 / 10kg",
     description: "Improved groundnut variety with good disease resistance.",
     image: "/groundnuts.jpg",
+    agronomy: groundnutAgronomy,
   },
 
+  // BEANS
   {
     id: "8",
     slug: "bean-nua-45",
@@ -109,6 +130,7 @@ export const products: Product[] = [
     cost: "MWK 55,000 / 10kg",
     description: "Fast-growing bean variety suitable for intercropping.",
     image: "/beans.webp",
+    agronomy: beanAgronomy,
   },
   {
     id: "9",
@@ -122,8 +144,10 @@ export const products: Product[] = [
     cost: "MWK 58,000 / 10kg",
     description: "Popular bean variety with good market acceptance.",
     image: "/beans.webp",
+    agronomy: beanAgronomy,
   },
 
+  // RICE
   {
     id: "10",
     slug: "rice-kilombero",
@@ -136,6 +160,7 @@ export const products: Product[] = [
     cost: "MWK 90,000 / 10kg",
     description: "Aromatic rice variety suited to lowland production systems.",
     image: "/rice.jpg",
+    agronomy: riceAgronomy,
   },
   {
     id: "11",
@@ -149,8 +174,10 @@ export const products: Product[] = [
     cost: "MWK 88,000 / 10kg",
     description: "Improved rice variety with stable yields.",
     image: "/rice.jpg",
+    agronomy: riceAgronomy,
   },
 
+  // SORGHUM / MILLET
   {
     id: "12",
     slug: "sorghum-piririra",
@@ -163,6 +190,7 @@ export const products: Product[] = [
     cost: "MWK 50,000 / 10kg",
     description: "Drought-tolerant sorghum variety for marginal areas.",
     image: "/sorghum.jpg",
+    agronomy: sorghumMilletAgronomy,
   },
   {
     id: "13",
@@ -176,8 +204,10 @@ export const products: Product[] = [
     cost: "MWK 48,000 / 10kg",
     description: "Resilient millet variety suited to low rainfall regions.",
     image: "/millet.jpg",
+    agronomy: sorghumMilletAgronomy,
   },
 
+  // OILSEEDS & FIBER
   {
     id: "14",
     slug: "cowpea-sudan-1",
@@ -190,8 +220,8 @@ export const products: Product[] = [
     cost: "MWK 52,000 / 10kg",
     description: "Early maturing cowpea suitable for food and fodder.",
     image: "/cowpeas.jpg",
+    agronomy: oilseedAgronomy,
   },
-
   {
     id: "15",
     slug: "pigeonpea-iceap-00557",
@@ -204,8 +234,8 @@ export const products: Product[] = [
     cost: "MWK 60,000 / 10kg",
     description: "High-yield pigeon pea variety for export and local markets.",
     image: "/pigeon-peas.jpg",
+    agronomy: oilseedAgronomy,
   },
-
   {
     id: "16",
     slug: "sunflower-record",
@@ -218,8 +248,8 @@ export const products: Product[] = [
     cost: "MWK 62,000 / 10kg",
     description: "Oilseed sunflower variety with high oil content.",
     image: "/sunflower.jpg",
+    agronomy: oilseedAgronomy,
   },
-
   {
     id: "17",
     slug: "sesame-ns-7",
@@ -232,8 +262,8 @@ export const products: Product[] = [
     cost: "MWK 55,000 / 10kg",
     description: "Improved sesame variety with uniform maturity.",
     image: "/sesame.png",
+    agronomy: oilseedAgronomy,
   },
-
   {
     id: "18",
     slug: "cotton-albar-g501",
@@ -246,8 +276,10 @@ export const products: Product[] = [
     cost: "MWK 95,000 / 10kg",
     description: "Commercial cotton variety with good lint quality.",
     image: "/cotton.jpg",
+    agronomy: oilseedAgronomy,
   },
 
+  // VEGETABLES
   {
     id: "19",
     slug: "tomato-rodade",
@@ -260,8 +292,8 @@ export const products: Product[] = [
     cost: "MWK 120,000 / kg",
     description: "High-yield open pollinated tomato for fresh markets.",
     image: "/tomato.jpg",
+    agronomy: vegetableAgronomy,
   },
-
   {
     id: "20",
     slug: "onion-red-creole",
@@ -274,5 +306,6 @@ export const products: Product[] = [
     cost: "MWK 110,000 / kg",
     description: "Popular onion variety with strong flavour and storability.",
     image: "/onion.jpg",
+    agronomy: vegetableAgronomy,
   },
 ];

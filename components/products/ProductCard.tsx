@@ -46,11 +46,18 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
 
           {/* Footer */}
-          <div className="mt-auto flex justify-between items-center">
+          <div className="mt-auto flex justify-between items-center gap-3">
             <span className="text-sm font-semibold text-green-500">
               {product.cost}
             </span>
-            <span className="text-xs text-gray-300">View details →</span>
+            <Link
+              href={`/contact?product=${encodeURIComponent(
+                `${product.plantName} ${product.variety}`
+              )}`}
+              className="text-xs px-4 py-2 rounded-lg bg-green-600 text-white font-semibold hover:bg-green-700 transition"
+            >
+              Buy
+            </Link>
           </div>
         </div>
       </div>
