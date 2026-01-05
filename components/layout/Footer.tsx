@@ -88,7 +88,6 @@ export default function Footer() {
             </p>
           </div>
         </div>
-
         {/* Copyright */}
         <div className="mt-8 text-center text-xs text-gray-300">
           © {new Date().getFullYear()} Demeter Seed. All rights reserved.
